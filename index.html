@@ -7,7 +7,7 @@
 
         <!-- Use daisyUI from CDN -->
         <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+            href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
             rel="stylesheet"
             type="text/css"
         />
@@ -44,9 +44,9 @@
             }
         </style>
     </head>
-    <body>
+    <body class="font-family bg-white">
         <!-- Header Section -->
-        <header class="container mx-auto">
+        <header class="container mx-auto mb-14">
             <div class="navbar bg-base-100">
                 <div class="navbar bg-base-100">
                     <div class="navbar-start">
@@ -105,9 +105,76 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="container mx-auto">
             <!-- Banner Section -->
-            <section></section>
+            <section>
+                <div
+                    class="hero min-h-screen"
+                    style="
+                        background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);
+                    "
+                >
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">
+                                Provident cupiditate voluptatem et in. Quaerat
+                                fugiat ut assumenda excepturi exercitationem
+                                quasi. In deleniti eaque aut repudiandae et a id
+                                nisi.
+                            </p>
+                            <button class="btn btn-primary">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Deal of the day Section -->
+            <section>
+                <div
+                    class="flex justify-between items-center flex-col lg:flex-row"
+                >
+                    <div>
+                        <h2>Deal of the day</h2>
+                        <p>
+                            Contrary to popular belief, is not simply random
+                            text. It has roots in a piece of classical Latin
+                            literature from 45 BC, making it over 2000 years
+                            old.
+                        </p>
+                    </div>
+                    <div>
+                        <div
+                            class="grid grid-flow-col gap-5 text-center auto-cols-max"
+                        >
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value: 15"></span>
+                                </span>
+                                days
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value: 10"></span>
+                                </span>
+                                hours
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value: 24"></span>
+                                </span>
+                                min
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="countdown font-mono text-5xl">
+                                    <span style="--value: 43"></span>
+                                </span>
+                                sec
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
